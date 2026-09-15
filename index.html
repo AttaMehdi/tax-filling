@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AM Tax Services — FBR Tax Filing, NTN Registration &amp; Compliance | Pakistan</title>
+<meta name="description" content="AM Tax Services: NTN registration, income tax return filing, FBR challans and compliance for salaried, business and retired taxpayers in Pakistan. Tax Year 2026 filing is open now.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#16241D;
+    --paper:#F3F3EC;
+    --panel:#FFFFFF;
+    --green-deep:#113A2B;
+    --green-mid:#1F5A41;
+    --green-soft:#E7EEE9;
+    --gold:#C69A3D;
+    --gold-soft:#F3E6C8;
+    --rust:#A84632;
+    --line:#DBD7C9;
+    --muted:#655F52;
+    --serif:'IBM Plex Serif', Georgia, serif;
+    --sans:'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --mono:'IBM Plex Mono', 'Courier New', monospace;
+    --maxw:1160px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0; background:var(--paper); color:var(--ink);
+    font-family:var(--sans); line-height:1.55; font-size:16px;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;display:block;}
+  a{color:inherit;}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 24px;}
+  h1,h2,h3,h4{font-family:var(--serif); font-weight:600; margin:0; line-height:1.18;}
+  h2{font-size:clamp(1.6rem,3vw,2.2rem);}
+  h3{font-size:1.15rem;}
+  p{margin:0;}
+  .muted{color:var(--muted);}
+  .mono{font-family:var(--mono);}
+  section{padding:76px 0;}
+  .section-head{max-width:640px; margin-bottom:36px;}
+  .section-tag{font-family:var(--mono); font-size:.78rem; letter-spacing:.03em; color:var(--green-mid); margin-bottom:10px; display:block;}
+  .section-head p{margin-top:12px; color:var(--muted); font-size:1.02rem;}
+  .btn{
+    display:inline-flex; align-items:center; gap:8px; justify-content:center;
+    padding:13px 26px; border-radius:3px; font-family:var(--sans); font-weight:600;
+    font-size:.95rem; text-decoration:none; cursor:pointer; border:1px solid transparent;
+    transition:transform .12s ease, background .15s ease;
+  }
+  .btn:active{transform:translateY(1px);}
+  .btn-primary{background:var(--gold); color:var(--green-deep);}
+  .btn-primary:hover{background:#D6AC55;}
+  .btn-outline{background:transparent; border-color:rgba(255,255,255,.5); color:inherit;}
+  .btn-outline:hover{background:rgba(255,255,255,.08);}
+  .btn-dark{background:var(--green-deep); color:#fff;}
+  .btn-dark:hover{background:var(--green-mid);}
+  .btn-block{width:100%;}
+
+  /* ===== Header ===== */
+  header{
+    position:sticky; top:0; z-index:50; background:rgba(243,243,236,.92);
+    backdrop-filter:blur(6px); border-bottom:1px solid var(--line);
+  }
+  .nav-row{display:flex; align-items:center; justify-content:space-between; height:76px;}
+  .brand{display:flex; flex-direction:column; text-decoration:none; color:var(--ink);}
+  .brand-name{font-family:var(--serif); font-weight:700; font-size:1.32rem; letter-spacing:.01em;}
+  .brand-tag{font-family:var(--mono); font-size:.66rem; letter-spacing:.09em; color:var(--green-mid); margin-top:2px;}
+  nav.links{display:flex; align-items:center; gap:28px;}
+  nav.links a{font-size:.92rem; text-decoration:none; color:var(--ink); font-weight:500;}
+  nav.links a:hover{color:var(--green-mid);}
+  .nav-cta{display:flex; gap:10px; align-items:center;}
+  .nav-cta .btn{padding:10px 18px; font-size:.86rem;}
+  .burger{display:none; background:none; border:none; cursor:pointer; padding:6px;}
+  .burger span{display:block; width:24px; height:2px; background:var(--ink); margin:5px 0;}
+
+  /* ===== Hero ===== */
+  .hero{background:var(--green-deep); color:#F3F3EC; padding:60px 0 0; overflow:hidden;}
+  .hero-grid{display:grid; grid-template-columns:1.15fr .85fr; gap:48px; align-items:center; padding-bottom:52px;}
+  .eyebrow{font-family:var(--mono); font-size:.8rem; letter-spacing:.05em; color:var(--gold); display:block; margin-bottom:16px;}
+  .hero h1{font-size:clamp(2rem,4.2vw,3rem); color:#fff;}
+  .hero p.lead{margin-top:18px; font-size:1.08rem; color:#D9E4DC; max-width:520px;}
+  .hero-ctas{display:flex; gap:14px; margin-top:30px; flex-wrap:wrap;}
+
+  .stamp{
+    width:220px; height:220px; margin:0 auto; border-radius:50%;
+    border:3px dashed rgba(198,154,61,.65); display:flex; flex-direction:column;
+    align-items:center; justify-content:center; text-align:center; transform:rotate(-7deg);
+    background:rgba(255,255,255,.03);
+  }
+  .stamp .l1{font-family:var(--mono); font-size:.62rem; letter-spacing:.12em; color:var(--gold);}
+  .stamp .days{font-family:var(--serif); font-size:2.6rem; font-weight:700; color:#fff; line-height:1;}
+  .stamp .l2{font-family:var(--mono); font-size:.62rem; letter-spacing:.08em; color:#D9E4DC; margin-top:4px;}
+  .stamp .l3{font-family:var(--mono); font-size:.7rem; color:var(--gold); margin-top:10px; font-weight:600;}
+  .stamp-wrap{display:flex; flex-direction:column; align-items:center; gap:14px;}
+  .stamp-note{font-family:var(--mono); font-size:.72rem; color:#AEC2B7; text-align:center; max-width:230px;}
+
+  .ticker-bar{border-top:1px solid rgba(255,255,255,.15); background:rgba(0,0,0,.14); overflow:hidden;}
+  .ticker-track{display:flex; gap:60px; white-space:nowrap; padding:12px 0; animation:tickerScroll 32s linear infinite;}
+  .ticker-track span{font-family:var(--mono); font-size:.8rem; color:#E4D9B8; display:inline-flex; align-items:center; gap:10px;}
+  .ticker-track span::before{content:"●"; color:var(--gold); font-size:.5rem;}
+  @keyframes tickerScroll{from{transform:translateX(0);} to{transform:translateX(-50%);}}
+  @media (prefers-reduced-motion: reduce){ .ticker-track{animation:none; overflow-x:auto;} html{scroll-behavior:auto;} }
+
+  /* ===== Services grid ===== */
+  .svc-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:var(--line); border:1px solid var(--line);}
+  .svc-card{background:var(--panel); padding:26px 22px; min-height:150px;}
+  .svc-card h3{font-size:1rem; margin-bottom:8px;}
+  .svc-card p{font-size:.88rem; color:var(--muted);}
+
+  /* ===== Tabs (folder-tab style) ===== */
+  .tabgroup{margin-top:8px;}
+  .tabbar{display:flex; gap:4px; flex-wrap:wrap;}
+  .tabbtn{
+    font-family:var(--sans); font-weight:600; font-size:.88rem; padding:12px 22px;
+    background:var(--green-soft); border:1px solid var(--line); border-bottom:none;
+    border-radius:6px 6px 0 0; cursor:pointer; color:var(--muted); position:relative; top:1px;
+  }
+  .tabbtn.active{background:var(--panel); color:var(--green-deep); border-bottom:1px solid var(--panel);}
+  .tabpanel{display:none; background:var(--panel); border:1px solid var(--line); padding:30px; border-radius:0 6px 6px 6px;}
+  .tabpanel.active{display:block;}
+  .subtabbar{display:flex; gap:8px; margin-bottom:22px;}
+  .subtabbtn{
+    font-family:var(--mono); font-size:.76rem; letter-spacing:.03em; padding:7px 14px;
+    border:1px solid var(--line); background:transparent; border-radius:20px; cursor:pointer; color:var(--muted);
+  }
+  .subtabbtn.active{background:var(--green-deep); color:#fff; border-color:var(--green-deep);}
+  .subpanel{display:none;} .subpanel.active{display:block;}
+
+  .service-row{
+    display:flex; justify-content:space-between; align-items:flex-start; gap:20px;
+    padding:16px 0; border-bottom:1px solid var(--line);
+  }
+  .service-row:last-child{border-bottom:none;}
+  .service-row h4{font-size:.98rem; margin-bottom:4px; font-weight:600;}
+  .service-row p{font-size:.85rem; color:var(--muted); max-width:520px;}
+  .service-row a{
+    flex-shrink:0; font-family:var(--mono); font-size:.76rem; text-decoration:none;
+    color:var(--green-mid); border:1px solid var(--green-mid); padding:8px 14px; border-radius:20px; white-space:nowrap;
+  }
+  .service-row a:hover{background:var(--green-mid); color:#fff;}
+  .portal-note{margin-top:22px; padding-top:18px; border-top:1px dashed var(--line); font-size:.85rem; color:var(--muted);}
+
+  .checklist{list-style:none; margin:0; padding:0;}
+  .checklist li{
+    padding:11px 0 11px 30px; border-bottom:1px solid var(--line); position:relative; font-size:.93rem;
+  }
+  .checklist li:last-child{border-bottom:none;}
+  .checklist li::before{
+    content:""; position:absolute; left:0; top:15px; width:14px; height:14px;
+    border:1.5px solid var(--gold); border-radius:2px;
+  }
+
+  /* ===== Why file / ledger table ===== */
+  .benefit-cols{display:grid; grid-template-columns:1fr 1fr; gap:36px; margin-bottom:44px;}
+  .benefit-box h3{margin-bottom:14px; font-size:1.05rem;}
+  .benefit-box ul{margin:0; padding-left:20px; font-size:.92rem; color:var(--ink);}
+  .benefit-box li{margin-bottom:10px; color:var(--muted);}
+  .benefit-box.pro{border-left:3px solid var(--green-mid); padding-left:20px;}
+  .benefit-box.con{border-left:3px solid var(--gold); padding-left:20px;}
+
+  table.ledger{width:100%; border-collapse:collapse; background:var(--panel); font-size:.86rem;}
+  table.ledger caption{text-align:left; font-family:var(--mono); font-size:.75rem; color:var(--muted); margin-bottom:10px;}
+  table.ledger th, table.ledger td{border:1px solid var(--line); padding:14px 16px; text-align:left; vertical-align:top;}
+  table.ledger thead th{background:var(--green-deep); color:#fff; font-family:var(--sans); font-weight:600; font-size:.82rem;}
+  table.ledger tbody th{background:var(--green-soft); font-weight:600; font-family:var(--sans); width:190px; color:var(--green-deep);}
+  .table-scroll{overflow-x:auto;}
+
+  /* ===== Offer ===== */
+  .offer{background:var(--gold-soft); border:1px dashed var(--gold); border-radius:8px; padding:44px; display:flex; justify-content:space-between; align-items:center; gap:30px; flex-wrap:wrap;}
+  .offer-badge{font-family:var(--mono); font-size:.72rem; letter-spacing:.06em; background:var(--rust); color:#fff; padding:5px 12px; border-radius:20px; display:inline-block; margin-bottom:14px;}
+  .offer h3{font-size:1.5rem; max-width:480px;}
+  .offer p{margin-top:10px; color:var(--muted); max-width:480px; font-size:.95rem;}
+
+  /* ===== Contact ===== */
+  .contact-grid{display:grid; grid-template-columns:.85fr 1.15fr; gap:48px;}
+  .contact-card{background:var(--green-deep); color:#fff; padding:34px; border-radius:8px;}
+  .contact-card h3{color:#fff; font-size:1.2rem; margin-bottom:18px;}
+  .contact-line{display:flex; flex-direction:column; margin-bottom:20px; font-size:.92rem;}
+  .contact-line .label{font-family:var(--mono); font-size:.7rem; color:var(--gold); letter-spacing:.05em; margin-bottom:4px;}
+  .contact-line a{color:#fff; text-decoration:none;}
+  .contact-line a:hover{text-decoration:underline;}
+  .form-card{background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:34px;}
+  .field{margin-bottom:20px;}
+  .field label{display:block; font-family:var(--mono); font-size:.74rem; letter-spacing:.04em; color:var(--muted); margin-bottom:7px;}
+  .field input[type=text], .field input[type=email], .field input[type=tel], .field textarea{
+    width:100%; border:none; border-bottom:1.5px solid var(--line); background:transparent;
+    padding:9px 2px; font-family:var(--sans); font-size:.95rem; color:var(--ink);
+  }
+  .field input:focus, .field textarea:focus{outline:none; border-bottom-color:var(--green-mid);}
+  .field textarea{resize:vertical; min-height:80px;}
+  .check-grid{display:grid; grid-template-columns:1fr 1fr; gap:10px 16px;}
+  .check-item{display:flex; align-items:center; gap:8px; font-size:.88rem;}
+  .check-item input{width:16px; height:16px; accent-color:var(--green-mid);}
+  .form-actions{display:flex; gap:12px; margin-top:26px; flex-wrap:wrap;}
+  .form-hint{font-size:.78rem; color:var(--muted); margin-top:14px;}
+
+  /* ===== Footer ===== */
+  footer{background:var(--ink); color:#CFCABC; padding:52px 0 0;}
+  .foot-grid{display:grid; grid-template-columns:1.4fr 1fr 1fr; gap:30px; padding-bottom:36px; border-bottom:1px solid rgba(255,255,255,.1);}
+  .foot-grid h4{color:#fff; font-size:.95rem; margin-bottom:14px;}
+  footer .brand-name{color:#fff;}
+  footer .brand-tag{color:var(--gold);}
+  .foot-links{list-style:none; padding:0; margin:0;}
+  .foot-links li{margin-bottom:10px;}
+  .foot-links a{text-decoration:none; color:#CFCABC; font-size:.88rem;}
+  .foot-links a:hover{color:#fff;}
+  .foot-links button{background:none; border:none; color:#CFCABC; font-size:.88rem; cursor:pointer; padding:0; font-family:var(--sans); text-align:left;}
+  .foot-links button:hover{color:#fff;}
+  .foot-bottom{display:flex; justify-content:space-between; align-items:center; padding:20px 0; font-size:.78rem; color:#948F80; flex-wrap:wrap; gap:10px;}
+
+  /* ===== Modal ===== */
+  .modal-overlay{position:fixed; inset:0; background:rgba(15,20,17,.6); display:none; align-items:center; justify-content:center; z-index:100; padding:20px;}
+  .modal-overlay.active{display:flex;}
+  .modal-box{background:var(--panel); max-width:560px; width:100%; max-height:80vh; overflow-y:auto; padding:34px; border-radius:8px; position:relative;}
+  .modal-box h3{margin-bottom:16px;}
+  .modal-box p{margin-bottom:12px; font-size:.9rem; color:var(--muted);}
+  .modal-close{position:absolute; top:18px; right:18px; background:none; border:none; font-size:1.3rem; cursor:pointer; color:var(--muted);}
+
+  @media (max-width:880px){
+    nav.links, .nav-cta{display:none;}
+    .burger{display:block;}
+    .hero-grid{grid-template-columns:1fr;}
+    .svc-grid{grid-template-columns:repeat(2,1fr);}
+    .benefit-cols{grid-template-columns:1fr;}
+    .contact-grid{grid-template-columns:1fr;}
+    .foot-grid{grid-template-columns:1fr;}
+    .check-grid{grid-template-columns:1fr;}
+    section{padding:52px 0;}
+  }
+  @media (max-width:560px){
+    .svc-grid{grid-template-columns:1fr;}
+    .offer{padding:28px;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav-row">
+    <a href="#top" class="brand">
+      <span class="brand-name">AM Tax Services</span>
+      <span class="brand-tag">NTN · TAX RETURNS · FBR COMPLIANCE</span>
+    </a>
+    <nav class="links">
+      <a href="#services">Services</a>
+      <a href="#fbr-portal">FBR Portal</a>
+      <a href="#documents">Documents</a>
+      <a href="#why-file">Why File</a>
+      <a href="#offer">Offer</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-dark" href="https://wa.me/923150243005" target="_blank" rel="noopener">WhatsApp</a>
+      <a class="btn btn-primary" href="#contact">Free Quote</a>
+    </div>
+    <button class="burger" id="burgerBtn" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div id="mobileMenu" style="display:none; background:var(--panel); border-bottom:1px solid var(--line);">
+  <div class="wrap" style="padding:18px 24px; display:flex; flex-direction:column; gap:14px;">
+    <a href="#services">Services</a>
+    <a href="#fbr-portal">FBR Portal</a>
+    <a href="#documents">Documents</a>
+    <a href="#why-file">Why File</a>
+    <a href="#offer">Offer</a>
+    <a href="#contact">Contact</a>
+    <a class="btn btn-dark btn-block" href="https://wa.me/923150243005" target="_blank" rel="noopener">Chat on WhatsApp</a>
+  </div>
+</div>
+
+<div id="top"></div>
+<section class="hero" style="padding-top:0;">
+  <div class="wrap hero-grid" style="padding-top:56px;">
+    <div>
+      <span class="eyebrow">TAX YEAR 2026 FILING IS OPEN NOW</span>
+      <h1>Your Tax Return, Filed Right — Without the IRIS Headache</h1>
+      <p class="lead">AM Tax Services handles your NTN registration, income tax return, wealth statement and FBR challans end to end. Whether you're salaried, run a business, or are retired — a simple, secure and reliable way to stay compliant.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="#contact">Get a Free Quote</a>
+        <a class="btn btn-outline" href="https://wa.me/923150243005" target="_blank" rel="noopener">Chat on WhatsApp</a>
+      </div>
+    </div>
+    <div class="stamp-wrap">
+      <div class="stamp">
+        <span class="l1">TAX YEAR 2026 · LAST DATE</span>
+        <span class="days" id="daysLeft">—</span>
+        <span class="l2">DAYS LEFT</span>
+        <span class="l3">30 SEPTEMBER 2026</span>
+      </div>
+      <p class="stamp-note">Deadline for individuals &amp; AOPs. Companies have until 31 December 2026. Late filing means a PKR 1,000/day penalty and possible removal from the ATL.</p>
+    </div>
+  </div>
+  <div class="ticker-bar">
+    <div class="ticker-track">
+      <span>Tax Year 2026 return deadline: 30 September for individuals &amp; AOPs</span>
+      <span>The ATL is updated weekly, typically every Sunday — check your status after filing</span>
+      <span>Late filing draws a PKR 1,000/day penalty plus surcharge — and possible removal from the ATL</span>
+      <span>Companies have until 31 December 2026 for Tax Year 2026</span>
+      <span>Filer (ATL) status means lower withholding tax on banking, property &amp; vehicle transactions</span>
+      <span>Tax Year 2026 return deadline: 30 September for individuals &amp; AOPs</span>
+      <span>The ATL is updated weekly, typically every Sunday — check your status after filing</span>
+      <span>Late filing draws a PKR 1,000/day penalty plus surcharge — and possible removal from the ATL</span>
+      <span>Companies have until 31 December 2026 for Tax Year 2026</span>
+      <span>Filer (ATL) status means lower withholding tax on banking, property &amp; vehicle transactions</span>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-tag">01 — OUR SERVICES</span>
+      <h2>What We File For You</h2>
+      <p>Every kind of income, every category of taxpayer — handled in one place.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc-card"><h3>Salaried Individual Return</h3><p>From your salary certificate to a filed return — simple and fast.</p></div>
+      <div class="svc-card"><h3>Business / Sole Proprietor</h3><p>Returns built from your business income, expenses and ledger.</p></div>
+      <div class="svc-card"><h3>Rental Income Return</h3><p>Accurate reporting of income earned from rented-out property.</p></div>
+      <div class="svc-card"><h3>Capital Gains</h3><p>Gain calculation on stocks, mutual funds, or property sales.</p></div>
+      <div class="svc-card"><h3>Agricultural Income</h3><p>Declaration and exemption handling for income from agriculture.</p></div>
+      <div class="svc-card"><h3>Wealth Statement</h3><p>An accurate, consistent statement of your assets and liabilities.</p></div>
+      <div class="svc-card"><h3>Withholding Tax Adjustment</h3><p>Correctly adjusting tax already deducted at source against your return.</p></div>
+      <div class="svc-card"><h3>Deductions &amp; Exemptions</h3><p>Eligible relief for zakat, donations, insurance and investments.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FBR PORTAL -->
+<section id="fbr-portal" style="background:var(--green-soft);">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-tag">02 — FBR ONLINE SERVICES</span>
+      <h2>FBR's Official Online Portals</h2>
+      <p>These services are run by FBR itself — we link you straight to the official portal. Can't get it done yourself? We can handle it on your behalf.</p>
+    </div>
+
+    <div class="tabgroup">
+      <div class="tabbar" id="portalTabs">
+        <button class="tabbtn active" data-tab="verif">Online Verifications</button>
+        <button class="tabbtn" data-tab="challan">Challan Generation</button>
+        <button class="tabbtn" data-tab="maloomat">FBR Maloomat</button>
+      </div>
+
+      <div class="tabpanel active" id="panel-verif">
+        <div class="service-row">
+          <div><h4>Active Taxpayer List (Income Tax)</h4><p>Check your filer/non-filer status using your CNIC or NTN.</p></div>
+          <a href="https://www.fbr.gov.pk/" target="_blank" rel="noopener">FBR Portal ↗</a>
+        </div>
+        <div class="service-row">
+          <div><h4>Taxpayer Profile Inquiry</h4><p>Verify your registered taxpayer profile on IRIS.</p></div>
+          <a href="https://iris.fbr.gov.pk/" target="_blank" rel="noopener">IRIS Portal ↗</a>
+        </div>
+        <div class="service-row">
+          <div><h4>Notices / Orders Verification</h4><p>Confirm the authenticity of a notice or order issued by FBR.</p></div>
+          <a href="https://iris.fbr.gov.pk/" target="_blank" rel="noopener">IRIS Portal ↗</a>
+        </div>
+        <div class="service-row">
+          <div><h4>POS Invoice Verification</h4><p>Verify a retail POS invoice against FBR's system.</p></div>
+          <a href="https://www.fbr.gov.pk/" target="_blank" rel="noopener">FBR Portal ↗</a>
+        </div>
+        <p class="portal-note">Note: all of these links go to FBR's own official websites. If you need help interpreting a result or fixing your status, get in touch with us.</p>
+      </div>
+
+      <div class="tabpanel" id="panel-challan">
+        <div class="service-row">
+          <div><h4>Tax on Immovable Property</h4><p>Challan for tax due on a property transfer or registration.</p></div>
+          <a href="https://iris.fbr.gov.pk/" target="_blank" rel="noopener">IRIS Portal ↗</a>
+        </div>
+        <div class="service-row">
+          <div><h4>Admitted Income Tax</h4><p>Payment challan for a self-declared tax liability.</p></div>
+          <a href="https://iris.fbr.gov.pk/" target="_blank" rel="noopener">IRIS Portal ↗</a>
+        </div>
+        <div class="service-row">
+          <div><h4>Advance Income Tax</h4><p>Challan for advance tax payments for the upcoming tax year.</p></div>
+          <a href="https://iris.fbr.gov.pk/" target="_blank" rel="noopener">IRIS Portal ↗</a>
+        </div>
+        <div class="service-row">
+          <div><h4>Demanded Income Tax</h4><p>Challan for a tax amount demanded by FBR.</p></div>
+          <a href="https://iris.fbr.gov.pk/" target="_blank" rel="noopener">IRIS Portal ↗</a>
+        </div>
+        <p class="portal-note">Not sure which challan or amount applies to you? Send us the details and we'll generate the correct one.</p>
+      </div>
+
+      <div class="tabpanel" id="panel-maloomat">
+        <div class="service-row"><div><h4>Assets Inquiry Portal</h4><p>View the assets currently recorded against your name.</p></div><a href="https://iris.fbr.gov.pk/" target="_blank" rel="noopener">IRIS Portal ↗</a></div>
+        <div class="service-row"><div><h4>Properties</h4><p>Details of properties registered in your name.</p></div><a href="https://iris.fbr.gov.pk/" target="_blank" rel="noopener">IRIS Portal ↗</a></div>
+        <div class="service-row"><div><h4>Vehicles</h4><p>Information on vehicles registered to you.</p></div><a href="https://iris.fbr.gov.pk/" target="_blank" rel="noopener">IRIS Portal ↗</a></div>
+        <div class="service-row"><div><h4>Frequent Travellers</h4><p>Travel history data, used for wealth reconciliation.</p></div><a href="https://iris.fbr.gov.pk/" target="_blank" rel="noopener">IRIS Portal ↗</a></div>
+        <div class="service-row"><div><h4>Withholding Payments</h4><p>A breakdown of withholding tax deducted from you.</p></div><a href="https://iris.fbr.gov.pk/" target="_blank" rel="noopener">IRIS Portal ↗</a></div>
+        <div class="service-row"><div><h4>Credit Card Payments</h4><p>A record of spending made through your credit card.</p></div><a href="https://iris.fbr.gov.pk/" target="_blank" rel="noopener">IRIS Portal ↗</a></div>
+        <div class="service-row"><div><h4>Debit Transactions</h4><p>Debit transaction data from your bank account.</p></div><a href="https://iris.fbr.gov.pk/" target="_blank" rel="noopener">IRIS Portal ↗</a></div>
+        <p class="portal-note">This data needs to match your wealth statement when you file — we take care of that reconciliation for you.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DOCUMENTS -->
+<section id="documents">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-tag">03 — REQUIRED DOCUMENTS</span>
+      <h2>What You Need for NTN &amp; Tax Filing</h2>
+      <p>Keep these documents ready in advance — it makes filing quick and hassle-free.</p>
+    </div>
+
+    <div class="tabgroup">
+      <div class="tabbar" id="docTabs">
+        <button class="tabbtn active" data-tab="ntn">NTN Registration</button>
+        <button class="tabbtn" data-tab="filing">Tax Return Filing</button>
+      </div>
+
+      <div class="tabpanel active" id="panel-ntn">
+        <div class="subtabbar" id="ntnSubtabs">
+          <button class="subtabbtn active" data-sub="ntn-salaried">Salaried Person</button>
+          <button class="subtabbtn" data-sub="ntn-business">Business Owner</button>
+        </div>
+        <div class="subpanel active" id="ntn-salaried">
+          <ul class="checklist">
+            <li>Valid CNIC copy</li>
+            <li>Recent paid electricity bill for your residence (not older than 3 months)</li>
+            <li>Latest salary slip</li>
+            <li>Employer's NTN, office address and email</li>
+            <li>Your active mobile number (registered against your own CNIC) and personal email</li>
+          </ul>
+        </div>
+        <div class="subpanel" id="ntn-business">
+          <ul class="checklist">
+            <li>Valid CNIC copy</li>
+            <li>Recent electricity bill for the business premises</li>
+            <li>Blank business letterhead</li>
+            <li>Property ownership papers OR a rental agreement (on Rs. 200 stamp paper)</li>
+            <li>Details of the nature/type of business</li>
+            <li>Active mobile number and email address</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tabpanel" id="panel-filing">
+        <ul class="checklist">
+          <li>NTN and IRIS login credentials (if already registered)</li>
+          <li>CNIC copy</li>
+          <li>Salary certificate / salary slips (for salaried individuals)</li>
+          <li>Bank statements for the full tax year, for all accounts</li>
+          <li>Business income and expense records / ledger (for business owners)</li>
+          <li>Rental agreement and rent receipts (if you have rental income)</li>
+          <li>Profit certificates — savings accounts, prize bonds, mutual funds, etc.</li>
+          <li>Property purchase/sale documents (if any transaction occurred during the year)</li>
+          <li>Vehicle registration/purchase details (if a new vehicle was acquired)</li>
+          <li>Zakat and donation receipts</li>
+          <li>Paid utility bills, for adjustable withholding tax</li>
+          <li>Previous year's tax return and wealth statement (if already a filer)</li>
+          <li>Proof of any foreign income or remittances (if applicable)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY FILE -->
+<section id="why-file" style="background:var(--green-soft);">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-tag">04 — WHY FILE A TAX RETURN</span>
+      <h2>The Benefits — and the Responsibilities — of Filing</h2>
+      <p>Becoming a filer isn't just a legal requirement — it makes several of your financial decisions easier too.</p>
+    </div>
+
+    <div class="benefit-cols">
+      <div class="benefit-box pro">
+        <h3>Benefits</h3>
+        <ul>
+          <li>Lower withholding tax on banking, property and vehicle transactions (ATL/filer status)</li>
+          <li>Avoids non-filing penalties (PKR 1,000+/day) and surcharges</li>
+          <li>Often required for visa applications, loan approvals and tender bids</li>
+          <li>Fulfils your legal obligation once income crosses the taxable threshold</li>
+          <li>Builds financial credibility and a documented income history</li>
+        </ul>
+      </div>
+      <div class="benefit-box con">
+        <h3>Things to Keep in Mind</h3>
+        <ul>
+          <li>Requires organising documents and records every year</li>
+          <li>Your wealth statement must be accurate and consistent year to year</li>
+          <li>Deadlines are strict — early preparation avoids a last-minute rush</li>
+          <li>Business filers need proper bookkeeping for a smooth filing</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="table-scroll">
+      <table class="ledger">
+        <caption>FILER CATEGORY — KEY DIFFERENCES</caption>
+        <thead>
+          <tr><th></th><th>Salaried Individual</th><th>Business Owner</th><th>Retired / Pensioner</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>How Filing Works</th>
+            <td>Straightforward filing based on your salary certificate</td>
+            <td>Needs a business income/expense ledger and wealth reconciliation</td>
+            <td>Simplified filing if pension is the only income; a normal return if there's property or investment income too</td>
+          </tr>
+          <tr>
+            <th>Wealth Statement</th>
+            <td>Required once income is above the threshold</td>
+            <td>Mandatory every year, alongside business assets</td>
+            <td>Required if you hold property, investments, or savings-based assets</td>
+          </tr>
+          <tr>
+            <th>Biggest Benefit</th>
+            <td>Lower WHT on bank profit and easier loan approval</td>
+            <td>Lower WHT on business banking and import transactions, tender eligibility</td>
+            <td>Keeps filer status active for property/bank transactions after retirement</td>
+          </tr>
+          <tr>
+            <th>Common Deductions</th>
+            <td>Zakat, insurance premium, approved donations, pension/mutual fund investment</td>
+            <td>Business expenses, depreciation, zakat, donations</td>
+            <td>Medical/insurance premium, zakat, approved donations</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- OFFER -->
+<section id="offer">
+  <div class="wrap">
+    <div class="offer">
+      <div>
+        <span class="offer-badge">FOR NEW CLIENTS</span>
+        <h3>Special Discount on Your First Filing</h3>
+        <p>New clients who file their first tax return with AM Tax Services get a special introductory rate. This offer is limited — message us on WhatsApp now to confirm your quote.</p>
+      </div>
+      <a class="btn btn-dark" href="https://wa.me/923150243005?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20the%20new%20client%20discount%20offer." target="_blank" rel="noopener">Claim the Offer</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-tag">05 — GET IN TOUCH</span>
+      <h2>Tell Us What You Need — We'll Take It From There</h2>
+      <p>Fill in the form, or reach out directly by WhatsApp, call, or text — whichever is easier for you.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h3>AM Tax Services</h3>
+        <div class="contact-line">
+          <span class="label">EMAIL</span>
+          <a href="mailto:attamehdi0@gmail.com">attamehdi0@gmail.com</a>
+        </div>
+        <div class="contact-line">
+          <span class="label">CALL / TEXT / WHATSAPP</span>
+          <a href="tel:+923150243005">+92 315 0243005</a>
+        </div>
+        <div class="contact-line">
+          <span class="label">SERVICE AREA</span>
+          <span>Pakistan-wide — remote consultation, every city</span>
+        </div>
+        <a class="btn btn-primary btn-block" href="https://wa.me/923150243005" target="_blank" rel="noopener" style="margin-top:10px;">Message Us on WhatsApp</a>
+      </div>
+
+      <div class="form-card">
+        <div class="field">
+          <label for="fname">Name</label>
+          <input type="text" id="fname" placeholder="Your full name">
+        </div>
+        <div class="field">
+          <label for="fphone">Phone / WhatsApp Number</label>
+          <input type="tel" id="fphone" placeholder="03XX-XXXXXXX">
+        </div>
+        <div class="field">
+          <label for="femail">Email (optional)</label>
+          <input type="email" id="femail" placeholder="you@example.com">
+        </div>
+        <div class="field">
+          <label>Which Service Do You Need</label>
+          <div class="check-grid">
+            <label class="check-item"><input type="checkbox" value="NTN Registration"> NTN Registration</label>
+            <label class="check-item"><input type="checkbox" value="Individual Tax Return"> Individual Tax Return</label>
+            <label class="check-item"><input type="checkbox" value="Business Tax Return"> Business Tax Return</label>
+            <label class="check-item"><input type="checkbox" value="Sales Tax Registration"> Sales Tax Registration</label>
+            <label class="check-item"><input type="checkbox" value="FBR Notice / Audit Help"> FBR Notice / Audit Help</label>
+            <label class="check-item"><input type="checkbox" value="Other"> Other</label>
+          </div>
+        </div>
+        <div class="field">
+          <label for="fmsg">Message</label>
+          <textarea id="fmsg" placeholder="Tell us a bit more about what you need..."></textarea>
+        </div>
+        <div class="form-actions">
+          <button class="btn btn-dark" onclick="sendViaEmail()">Send via Email</button>
+          <button class="btn btn-primary" onclick="sendViaWhatsApp()">Send via WhatsApp</button>
+        </div>
+        <p class="form-hint">As soon as you submit, your email client or WhatsApp will open with the message pre-filled — just hit send.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <span class="brand-name" style="font-family:var(--serif); font-weight:700; font-size:1.25rem;">AM Tax Services</span><br>
+        <span class="brand-tag" style="font-family:var(--mono); font-size:.68rem; letter-spacing:.08em;">NTN · TAX RETURNS · FBR COMPLIANCE</span>
+        <p style="margin-top:14px; font-size:.85rem; color:#ABA695; max-width:280px;">Tax return filing, NTN registration and FBR compliance consultancy for individuals and businesses across Pakistan.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul class="foot-links">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#fbr-portal">FBR Portal</a></li>
+          <li><a href="#documents">Documents</a></li>
+          <li><a href="#why-file">Why File</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul class="foot-links">
+          <li><button onclick="openModal('privacyModal')">Privacy Policy</button></li>
+          <li><button onclick="openModal('termsModal')">Terms of Service</button></li>
+          <li><button onclick="openModal('disclaimerModal')">Disclaimer</button></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="year"></span> AM Tax Services. All rights reserved.</span>
+      <span>This website is not affiliated with FBR — it is an independent tax consultancy.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- MODALS -->
+<div class="modal-overlay" id="privacyModal">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal('privacyModal')">&times;</button>
+    <h3>Privacy Policy</h3>
+    <p>AM Tax Services uses your personal and financial information solely to provide tax filing and consultancy services. Your data is not shared with any third party without your consent, except where required by law to submit it to FBR or a relevant authority.</p>
+    <p>Information provided through the contact form or WhatsApp (name, phone, email, service requirement) is kept only to get in touch with you and provide a quote.</p>
+    <p>If you have any questions before sharing a document or sensitive information, feel free to ask us by email or WhatsApp.</p>
+  </div>
+</div>
+
+<div class="modal-overlay" id="termsModal">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal('termsModal')">&times;</button>
+    <h3>Terms of Service</h3>
+    <p>The information on this website is for general guidance only and is not a substitute for professional tax or legal advice. Your details will be verified before any return is finalised and filed.</p>
+    <p>Service fees, timelines and required documents may vary by case — these will be confirmed with you over WhatsApp or email.</p>
+    <p>It is the client's responsibility to ensure that the information provided (income, assets, transactions) is accurate and complete. Any penalty arising from incorrect information will be the client's responsibility.</p>
+  </div>
+</div>
+
+<div class="modal-overlay" id="disclaimerModal">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal('disclaimerModal')">&times;</button>
+    <h3>Disclaimer</h3>
+    <p>AM Tax Services is not part of the Federal Board of Revenue (FBR). All links on this site to FBR services go directly to FBR's own official websites (fbr.gov.pk, iris.fbr.gov.pk).</p>
+    <p>Deadlines, penalty rates and tax rules can change over time — always confirm the latest position with us or on FBR's official website.</p>
+  </div>
+</div>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Deadline countdown
+  (function(){
+    var deadline = new Date('2026-09-30T23:59:59');
+    var now = new Date();
+    var diff = Math.ceil((deadline - now) / (1000*60*60*24));
+    document.getElementById('daysLeft').textContent = diff > 0 ? diff : '0';
+  })();
+
+  // Mobile menu
+  var burger = document.getElementById('burgerBtn');
+  var mobileMenu = document.getElementById('mobileMenu');
+  burger.addEventListener('click', function(){
+    mobileMenu.style.display = mobileMenu.style.display === 'block' ? 'none' : 'block';
+  });
+  document.querySelectorAll('#mobileMenu a').forEach(function(a){
+    a.addEventListener('click', function(){ mobileMenu.style.display = 'none'; });
+  });
+
+  // Generic tab handler
+  function setupTabs(tabbarId, panelPrefix){
+    var bar = document.getElementById(tabbarId);
+    if(!bar) return;
+    bar.querySelectorAll('.tabbtn').forEach(function(btn){
+      btn.addEventListener('click', function(){
+        bar.querySelectorAll('.tabbtn').forEach(function(b){ b.classList.remove('active'); });
+        btn.classList.add('active');
+        var group = bar.parentElement;
+        group.querySelectorAll('.tabpanel').forEach(function(p){ p.classList.remove('active'); });
+        document.getElementById(panelPrefix + btn.dataset.tab).classList.add('active');
+      });
+    });
+  }
+  setupTabs('portalTabs', 'panel-');
+  setupTabs('docTabs', 'panel-');
+
+  // NTN sub-tabs
+  var ntnSub = document.getElementById('ntnSubtabs');
+  ntnSub.querySelectorAll('.subtabbtn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      ntnSub.querySelectorAll('.subtabbtn').forEach(function(b){ b.classList.remove('active'); });
+      btn.classList.add('active');
+      ntnSub.parentElement.querySelectorAll('.subpanel').forEach(function(p){ p.classList.remove('active'); });
+      document.getElementById(btn.dataset.sub).classList.add('active');
+    });
+  });
+
+  // Modals
+  function openModal(id){ document.getElementById(id).classList.add('active'); }
+  function closeModal(id){ document.getElementById(id).classList.remove('active'); }
+  document.querySelectorAll('.modal-overlay').forEach(function(ov){
+    ov.addEventListener('click', function(e){ if(e.target === ov) ov.classList.remove('active'); });
+  });
+
+  // Lead form -> Email / WhatsApp
+  function collectFormData(){
+    var name = document.getElementById('fname').value.trim();
+    var phone = document.getElementById('fphone').value.trim();
+    var email = document.getElementById('femail').value.trim();
+    var msg = document.getElementById('fmsg').value.trim();
+    var services = Array.from(document.querySelectorAll('.check-item input:checked')).map(function(i){ return i.value; }).join(', ');
+    return { name: name, phone: phone, email: email, msg: msg, services: services };
+  }
+
+  function sendViaEmail(){
+    var d = collectFormData();
+    var subject = 'Tax Service Inquiry - ' + (d.name || 'New Lead');
+    var body = 'Name: ' + d.name + '\nPhone: ' + d.phone + '\nEmail: ' + d.email +
+               '\nServices: ' + d.services + '\n\nMessage:\n' + d.msg;
+    window.location.href = 'mailto:attamehdi0@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+  }
+
+  function sendViaWhatsApp(){
+    var d = collectFormData();
+    var text = 'Hi, my name is ' + (d.name || '[name]') + '.\n' +
+               'Phone: ' + (d.phone || '-') + '\n' +
+               'Services needed: ' + (d.services || '-') + '\n' +
+               'Message: ' + (d.msg || '-');
+    window.open('https://wa.me/923150243005?text=' + encodeURIComponent(text), '_blank');
+  }
+</script>
+
+</body>
+</html>
